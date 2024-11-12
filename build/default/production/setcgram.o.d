@@ -1,4 +1,4 @@
 build/default/production/setcgram.o:  \
-	C:/Users/simon/MPLABXProjects/Flash_A_Mole.X/setcgram.c  \
-	C:/Users/simon/MPLABXProjects/Flash_A_Mole.X/my_xlcd.h  \
+	C:/Users/18706/OneDrive\ -\ Cedarville\ University/Classes/Fa\ 2024/Microcontrollers/Flash_A_Mole.X/setcgram.c  \
+	C:/Users/18706/OneDrive\ -\ Cedarville\ University/Classes/Fa\ 2024/Microcontrollers/Flash_A_Mole.X/my_xlcd.h  \
 
