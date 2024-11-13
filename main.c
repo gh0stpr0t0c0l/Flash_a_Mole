@@ -10,6 +10,9 @@
 unsigned long result = 0;
 long int output;
 unsigned int i;
+unsigned char TOP = 93;
+unsigned char BOTTOM = 30; 
+
 
 void DelayFor18TCY( void ){
 Nop();
@@ -48,12 +51,10 @@ void Servo_4 (unsigned char value)
     CCP4CON = CCP4CON|(value << 4);
 }
 
-void SERVO_UP(void) {
-    Servo_4(93);
-}
-
-void SERVO_DN(void) {
-    Servo_4(30);
+void Servo_1 (unsigned char value)
+{
+    CCPR1L = value >> 2;
+    CCP1CON = CCP1CON|(value << 4);
 }
 
 void main( void ){  
@@ -68,7 +69,7 @@ void main( void ){
     WriteCmdXLCD(0x01); //CLEAR DISPLAY
     WriteCmdXLCD(BLINK_ON); //BLINK ON
     WriteCmdXLCD(SHIFT_DISP_LEFT);
-    //TRISA = 0xFF; 
+    //TRISA = 0xFF; //THIS IS THE FORMAT OF ADC PORT
     //ANSELA = 0x01;
     TRISA = 0x00; //XLCD DISPLAY
     ANSELA = 0x00;
@@ -81,7 +82,8 @@ void main( void ){
     PR2 = 0x9B;
     T2CON = 0b00000110;
     TRISD = 0x00;
-    //CCP1CON = 0b00001100; //USED FOR OTHER MOTORS
+    TRISC = 0x00; //servo 1
+    CCP1CON = 0b00001100; //USED FOR OTHER MOTORS
     //CCP2CON = 0b00001100;
     //CCP3CON = 0b00001100;
     CCP4CON = 0b00001100;
@@ -89,9 +91,11 @@ void main( void ){
     TRISE = 0x00;
     
     while (1){
-        SERVO_UP();
+        Servo_4(TOP);
+        Servo_1(TOP);
         Delay10KTCYx(5);
-        SERVO_DN();
+        Servo_4(BOTTOM);
+        Servo_1(BOTTOM);
         Delay10KTCYx(5);
         
         //ADCON0bits.GO = 1;
