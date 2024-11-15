@@ -45,16 +45,34 @@ Delay1KTCYx(20); // Delay of 5ms
 return;
 }
 
+void Servo_1 (unsigned char value)
+{
+    CCPR1L = value >> 2;
+    CCP1CON = CCP1CON|(value << 4);
+}
+
+void Servo_2 (unsigned char value)
+{
+    CCPR2L = value >> 2;
+    CCP2CON = CCP2CON|(value << 4);
+}
+
+void Servo_3 (unsigned char value)
+{
+    CCPR3L = value >> 2;
+    CCP3CON = CCP3CON|(value << 4);
+}
+
 void Servo_4 (unsigned char value)
 {
     CCPR4L = value >> 2;
     CCP4CON = CCP4CON|(value << 4);
 }
 
-void Servo_1 (unsigned char value)
+void Servo_5 (unsigned char value)
 {
-    CCPR1L = value >> 2;
-    CCP1CON = CCP1CON|(value << 4);
+    CCPR5L = value >> 2;
+    CCP5CON = CCP5CON|(value << 4);
 }
 
 void main( void ){  
@@ -63,45 +81,52 @@ void main( void ){
     OSCTUNEbits.INTSRC=0;
     OSCCON2 = 0x00; //no 4X PLL
     OSCCON = 0x30;  // 1MHZ //NEEDS TO BE 20
-    //TRISC = 0x00;
-    //ANSELC = 0x00;
     OpenXLCD(FOUR_BIT & LINES_5X7);
     WriteCmdXLCD(0x01); //CLEAR DISPLAY
     WriteCmdXLCD(BLINK_ON); //BLINK ON
     WriteCmdXLCD(SHIFT_DISP_LEFT);
-    //TRISA = 0xFF; //THIS IS THE FORMAT OF ADC PORT
-    //ANSELA = 0x01;
     TRISA = 0x00; //XLCD DISPLAY
     ANSELA = 0x00;
-    //VREFCON0 = 0xF0; //ADC STUFF
-    //ADCON0 = 0b00000001;
-    //ADCON1 = 0x08; //don't cares substituted for 0's
-    //ADCON2 = 0b10110110;
+    VREFCON0 = 0xF0; //ADC STUFF
+    ADCON0 = 0b00111101;
+    ADCON1 = 0x08; //don't cares substituted for 0's
+    ADCON2 = 0b10110110;
     
-    CCPTMRS0 = 0b00000000;
-    PR2 = 0x9B;
-    T2CON = 0b00000110;
-    TRISD = 0x00;
-    TRISC = 0x00; //servo 1
+    CCPTMRS0 = 0x00;
+    PR2 = 0x9B; //timer 2 config
+    T2CON = 0b00000110; //timer 2 config
+    
+    TRISC = 0x08; //servo 1, 2; ADC 1
+    ANSELC = 0x08; 
+    TRISD = 0x00; //servo 4
+    ANSELD = 0x00;
+    TRISE = 0x00; //servo 3, 5
+    ANSELE = 0x00;
+    
     CCP1CON = 0b00001100; //USED FOR OTHER MOTORS
-    //CCP2CON = 0b00001100;
-    //CCP3CON = 0b00001100;
+    CCP2CON = 0b00001100;
+    CCP3CON = 0b00001100;
     CCP4CON = 0b00001100;
-    //CCP5CON = 0b00001100;
-    TRISE = 0x00;
+    CCP5CON = 0b00001100;
     
     while (1){
-        Servo_4(TOP);
-        Servo_1(TOP);
-        Delay10KTCYx(5);
-        Servo_4(BOTTOM);
-        Servo_1(BOTTOM);
-        Delay10KTCYx(5);
+//        Servo_1(TOP);
+//        Servo_2(TOP);
+//        Servo_3(TOP);
+//        Servo_4(TOP);
+//        Servo_5(TOP);
+//        Delay10KTCYx(5);
+//        Servo_1(BOTTOM);
+//        Servo_2(BOTTOM);
+//        Servo_3(BOTTOM);
+//        Servo_4(BOTTOM);
+//        Servo_5(BOTTOM);
+//        Delay10KTCYx(5);
         
-        //ADCON0bits.GO = 1;
-        //while(ADCON0bits.GO);
-        //result = ADRES;
-        //result = result * 400000;
+        ADCON0bits.GO = 1;
+        while(ADCON0bits.GO);
+        result = ADRES;
+        result = result * 400000;
 
         SetDDRamAddr(0x00);
         putrsXLCD("Voltage is:");
@@ -110,34 +135,17 @@ void main( void ){
         SetDDRamAddr(0x47);
         putrsXLCD("Volts");
         
-        //output = (result/100000%10000)/1000;
-        //SetDDRamAddr(0x40);
-        //putcXLCD(output+48);
-        //for(i=1;i<=(output/0x01);++i){
-        //    SetDDRamAddr(0x0B+0x01*i);
-        //    putcXLCD(0xFF);
-        //}
-        //while ((0x0B + 0x01*i) <= 0x0F) {
-        //    SetDDRamAddr(0x0B + 0x01*i);
-        //    putcXLCD(0x20);
-        //    i = i + 1;
-        //}
-        //output = (result/100000%1000)/100;
-        //if ((output > 0) || (((result/100000%10000)/1000)>0)){
-        //    SetDDRamAddr(0x0B);
-        //    putcXLCD(0xFF);
-        //}
-        //else{
-        //    SetDDRamAddr(0x0B);
-        //    putcXLCD(0x20);
-        //}
-        //SetDDRamAddr(0x42);
-        //putcXLCD(output+48);
-        //output = (result/100000%100)/10;
-        //SetDDRamAddr(0x43);
-        //putcXLCD(output+48);
-        //output = (result/100000%10);
-        //SetDDRamAddr(0x44);
-        //putcXLCD(output+48);
+        output = (result/100000%10000)/1000;
+        SetDDRamAddr(0x40);
+        putcXLCD(output+48);
+        
+        SetDDRamAddr(0x42);
+        putcXLCD(output+48);
+        output = (result/100000%100)/10;
+        SetDDRamAddr(0x43);
+        putcXLCD(output+48);
+        output = (result/100000%10);
+        SetDDRamAddr(0x44);
+        putcXLCD(output+48);
     }
 }

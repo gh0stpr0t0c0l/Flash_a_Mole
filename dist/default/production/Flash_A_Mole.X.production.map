@@ -1,62 +1,62 @@
 MPLINK 5.00, LINKER
-Linker Map File - Created Thu Nov 14 22:42:22 2024
+Linker Map File - Created Thu Nov 14 23:02:31 2024
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
                 ---------  ---------  ---------  ---------  ---------
                _entry_scn       code   0x000000    program   0x000006
                    .cinit    romdata   0x000006    program   0x00000e
-             .code_main.o       code   0x000014    program   0x000428
-         .code_openxlcd.o       code   0x00043c    program   0x0000ce
-               _cinit_scn       code   0x00050a    program   0x00009e
-          .code_fxm3232.o       code   0x0005a8    program   0x000070
-         .code_setddram.o       code   0x000618    program   0x000050
-         .code_setcgram.o       code   0x000668    program   0x000050
-         .code_putrxlcd.o       code   0x0006b8    program   0x00004e
-         .code_writdata.o       code   0x000706    program   0x00004c
-         .code_wcmdxlcd.o       code   0x000752    program   0x00004c
-         .code_putsxlcd.o       code   0x00079e    program   0x00004a
-         .code_fxd3232u.o       code   0x0007e8    program   0x000048
-         .code_readdata.o       code   0x000830    program   0x000044
-         .code_readaddr.o       code   0x000874    program   0x000044
-         .code_busyxlcd.o       code   0x0008b8    program   0x000036
-             D10KTCYXCODE       code   0x0008ee    program   0x00002e
-              D1KTCYXCODE       code   0x00091c    program   0x000020
-                    .code       code   0x00093c    program   0x000020
-             _startup_scn       code   0x00095c    program   0x00001c
-             .stringtable    romdata   0x000978    program   0x000012
-           .code___init.o       code   0x00098a    program   0x000002
-      .idata_setcgram.o_i    romdata   0x00098c    program   0x000000
-      .romdata_setcgram.o    romdata   0x00098c    program   0x000000
-      .idata_setddram.o_i    romdata   0x00098c    program   0x000000
-      .romdata_setddram.o    romdata   0x00098c    program   0x000000
-          .romdata_main.o    romdata   0x00098c    program   0x000000
-      .idata_wcmdxlcd.o_i    romdata   0x00098c    program   0x000000
-      .romdata_wcmdxlcd.o    romdata   0x00098c    program   0x000000
-          .idata_main.o_i    romdata   0x00098c    program   0x000006
-      .idata_writdata.o_i    romdata   0x00098c    program   0x000000
-      .romdata_writdata.o    romdata   0x00098c    program   0x000000
-      .romdata_fxd3232u.o    romdata   0x00098c    program   0x000000
-      .romdata_busyxlcd.o    romdata   0x00098c    program   0x000000
-      .idata_openxlcd.o_i    romdata   0x00098c    program   0x000000
-      .romdata_openxlcd.o    romdata   0x00098c    program   0x000000
-      .idata_putrxlcd.o_i    romdata   0x00098c    program   0x000000
-      .romdata_putrxlcd.o    romdata   0x00098c    program   0x000000
-        .romdata___init.o    romdata   0x00098c    program   0x000000
-      .idata_putsxlcd.o_i    romdata   0x00098c    program   0x000000
-      .romdata_putsxlcd.o    romdata   0x00098c    program   0x000000
-      .idata_readaddr.o_i    romdata   0x00098c    program   0x000000
-      .romdata_readaddr.o    romdata   0x00098c    program   0x000000
-         .romdata_c018i.o    romdata   0x00098c    program   0x000000
-      .idata_readdata.o_i    romdata   0x00098c    program   0x000000
-      .romdata_readdata.o    romdata   0x00098c    program   0x000000
-       .romdata_fxm3232.o    romdata   0x00098c    program   0x000000
-        .idata___init.o_i    romdata   0x000992    program   0x000000
-       .idata_fxm3232.o_i    romdata   0x000992    program   0x000000
-         .idata_c018i.o_i    romdata   0x000992    program   0x000000
-            .code_c018i.o       code   0x000992    program   0x000000
-      .idata_fxd3232u.o_i    romdata   0x000992    program   0x000000
-      .idata_busyxlcd.o_i    romdata   0x000992    program   0x000000
+             .code_main.o       code   0x000014    program   0x000426
+         .code_openxlcd.o       code   0x00043a    program   0x0000ce
+               _cinit_scn       code   0x000508    program   0x00009e
+          .code_fxm3232.o       code   0x0005a6    program   0x000070
+         .code_setddram.o       code   0x000616    program   0x000050
+         .code_setcgram.o       code   0x000666    program   0x000050
+         .code_putrxlcd.o       code   0x0006b6    program   0x00004e
+         .code_writdata.o       code   0x000704    program   0x00004c
+         .code_wcmdxlcd.o       code   0x000750    program   0x00004c
+         .code_putsxlcd.o       code   0x00079c    program   0x00004a
+         .code_fxd3232u.o       code   0x0007e6    program   0x000048
+         .code_readdata.o       code   0x00082e    program   0x000044
+         .code_readaddr.o       code   0x000872    program   0x000044
+         .code_busyxlcd.o       code   0x0008b6    program   0x000036
+             D10KTCYXCODE       code   0x0008ec    program   0x00002e
+              D1KTCYXCODE       code   0x00091a    program   0x000020
+                    .code       code   0x00093a    program   0x000020
+             _startup_scn       code   0x00095a    program   0x00001c
+             .stringtable    romdata   0x000976    program   0x000012
+           .code___init.o       code   0x000988    program   0x000002
+      .idata_setcgram.o_i    romdata   0x00098a    program   0x000000
+      .romdata_setcgram.o    romdata   0x00098a    program   0x000000
+      .idata_setddram.o_i    romdata   0x00098a    program   0x000000
+      .romdata_setddram.o    romdata   0x00098a    program   0x000000
+          .romdata_main.o    romdata   0x00098a    program   0x000000
+      .idata_wcmdxlcd.o_i    romdata   0x00098a    program   0x000000
+      .romdata_wcmdxlcd.o    romdata   0x00098a    program   0x000000
+          .idata_main.o_i    romdata   0x00098a    program   0x000006
+      .idata_writdata.o_i    romdata   0x00098a    program   0x000000
+      .romdata_writdata.o    romdata   0x00098a    program   0x000000
+      .romdata_fxd3232u.o    romdata   0x00098a    program   0x000000
+      .romdata_busyxlcd.o    romdata   0x00098a    program   0x000000
+      .idata_openxlcd.o_i    romdata   0x00098a    program   0x000000
+      .romdata_openxlcd.o    romdata   0x00098a    program   0x000000
+      .idata_putrxlcd.o_i    romdata   0x00098a    program   0x000000
+      .romdata_putrxlcd.o    romdata   0x00098a    program   0x000000
+        .romdata___init.o    romdata   0x00098a    program   0x000000
+      .idata_putsxlcd.o_i    romdata   0x00098a    program   0x000000
+      .romdata_putsxlcd.o    romdata   0x00098a    program   0x000000
+      .idata_readaddr.o_i    romdata   0x00098a    program   0x000000
+      .romdata_readaddr.o    romdata   0x00098a    program   0x000000
+         .romdata_c018i.o    romdata   0x00098a    program   0x000000
+      .idata_readdata.o_i    romdata   0x00098a    program   0x000000
+      .romdata_readdata.o    romdata   0x00098a    program   0x000000
+       .romdata_fxm3232.o    romdata   0x00098a    program   0x000000
+        .idata___init.o_i    romdata   0x000990    program   0x000000
+       .idata_fxm3232.o_i    romdata   0x000990    program   0x000000
+         .idata_c018i.o_i    romdata   0x000990    program   0x000000
+            .code_c018i.o       code   0x000990    program   0x000000
+      .idata_fxd3232u.o_i    romdata   0x000990    program   0x000000
+      .idata_busyxlcd.o_i    romdata   0x000990    program   0x000000
     .config_300001_main.o    romdata   0x300001    program   0x000001
     .config_300002_main.o    romdata   0x300002    program   0x000001
     .config_300003_main.o    romdata   0x300003    program   0x000001
@@ -105,78 +105,78 @@ Linker Map File - Created Thu Nov 14 22:42:22 2024
                               Program Memory Usage 
                                Start         End      
                            ---------   ---------      
-                            0x000000    0x000991      
+                            0x000000    0x00098f      
                             0x300001    0x300003      
                             0x300005    0x300006      
-            2455 out of 33048 program addresses used, program memory utilization is 7%
+            2453 out of 33048 program addresses used, program memory utilization is 7%
 
 
 
                               Symbols - Sorted by Name
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
-                 BusyXLCD   0x0008b8    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\busyxlcd.c
-                   D10K_1   0x0008fa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10Kl   0x000906    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10Kx   0x0008f8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D1K_1   0x000928    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-                     D1Kx   0x000926    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-             Delay10KTCYx   0x0008ee    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-              Delay1KTCYx   0x00091c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                 BusyXLCD   0x0008b6    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\busyxlcd.c
+                   D10K_1   0x0008f8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x000904    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x0008f6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D1K_1   0x000926    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                     D1Kx   0x000924    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+             Delay10KTCYx   0x0008ec    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+              Delay1KTCYx   0x00091a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
             DelayFor18TCY   0x000014    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\main.c
              DelayPORXLCD   0x00002e    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\main.c
                 DelayXLCD   0x00003a    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\main.c
-                 FXD3232U   0x0007e8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
-                  FXM3232   0x0005a8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm3232.c
-                 OpenXLCD   0x00043c    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\openxlcd.c
-             ReadAddrXLCD   0x000874    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\readaddr.c
-             ReadDataXLCD   0x000830    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\readdata.c
+                 FXD3232U   0x0007e6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
+                  FXM3232   0x0005a6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm3232.c
+                 OpenXLCD   0x00043a    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\openxlcd.c
+             ReadAddrXLCD   0x000872    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\readaddr.c
+             ReadDataXLCD   0x00082e    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\readdata.c
                   Servo_1   0x000046    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\main.c
                   Servo_2   0x00006a    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\main.c
                   Servo_3   0x00008e    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\main.c
                   Servo_4   0x0000b4    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\main.c
                   Servo_5   0x0000da    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\main.c
-             SetCGRamAddr   0x000668    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\setcgram.c
-             SetDDRamAddr   0x000618    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\setddram.c
-             WriteCmdXLCD   0x000752    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\wcmdxlcd.c
-            WriteDataXLCD   0x000706    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\writdata.c
-       _D10KTCYXCODE_0010   0x0008fe    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_001C   0x00090a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-        _D1KTCYXCODE_0010   0x00092c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-        _D1KTCYXCODE_0016   0x000932    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-       ___return_lbl00000   0x000616    program     static                          
+             SetCGRamAddr   0x000666    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\setcgram.c
+             SetDDRamAddr   0x000616    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\setddram.c
+             WriteCmdXLCD   0x000750    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\wcmdxlcd.c
+            WriteDataXLCD   0x000704    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\writdata.c
+       _D10KTCYXCODE_0010   0x0008fc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x000908    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+        _D1KTCYXCODE_0010   0x00092a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0016   0x000930    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+       ___return_lbl00000   0x000614    program     static                          
        ___return_lbl00000   0x00002c    program     static                          
        ___return_lbl00000   0x000004    program     static                          
-       ___return_lbl00000   0x00082e    program     static                          
-       ___return_lbl00001   0x000976    program     static                          
-       ___return_lbl00002   0x0005a6    program     static                          
+       ___return_lbl00000   0x00082c    program     static                          
+       ___return_lbl00001   0x000974    program     static                          
+       ___return_lbl00002   0x0005a4    program     static                          
                __config_0   0x300001    program     static C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\main.c
                __config_1   0x300002    program     static C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\main.c
                __config_2   0x300003    program     static C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\main.c
                __config_3   0x300005    program     static C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\main.c
                __config_4   0x300006    program     static C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\main.c
-                   __init   0x00098a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
-               __string_0   0x00097e    program     static C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\main.c
-               __string_1   0x000978    program     static C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\main.c
-            __zero_memory   0x00093c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f45k22.asm
-                _do_cinit   0x00050a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                   __init   0x000988    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
+               __string_0   0x00097c    program     static C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\main.c
+               __string_1   0x000976    program     static C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\main.c
+            __zero_memory   0x00093a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f45k22.asm
+                _do_cinit   0x000508    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                    _entry   0x000000    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                   _false   0x00082a    program     static                          
-                 _startup   0x00095c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                compare_l   0x000952    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f45k22.asm
-                copy_loop   0x00057c    program     static                          
-            copy_one_byte   0x000582    program     static                          
-                     done   0x0005a6    program     static                          
-             done_copying   0x000590    program     static                          
-                     loop   0x0007f6    program     static                          
-                     loop   0x00096c    program     static                          
-                   loop_h   0x00094a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f45k22.asm
-                   loop_l   0x000954    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f45k22.asm
+                   _false   0x000828    program     static                          
+                 _startup   0x00095a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                compare_l   0x000950    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f45k22.asm
+                copy_loop   0x00057a    program     static                          
+            copy_one_byte   0x000580    program     static                          
+                     done   0x0005a4    program     static                          
+             done_copying   0x00058e    program     static                          
+                     loop   0x0007f4    program     static                          
+                     loop   0x00096a    program     static                          
+                   loop_h   0x000948    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f45k22.asm
+                   loop_l   0x000952    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f45k22.asm
                      main   0x000100    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\main.c
-                putrsXLCD   0x0006b8    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\putrxlcd.c
-                 putsXLCD   0x00079e    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\putsxlcd.c
-                     test   0x000524    program     static                          
-               zero_block   0x00094a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f45k22.asm
+                putrsXLCD   0x0006b6    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\putrxlcd.c
+                 putsXLCD   0x00079c    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\putsxlcd.c
+                     test   0x000522    program     static                          
+               zero_block   0x000948    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f45k22.asm
                    ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f45k22.asm
                ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f45k22.asm
                    ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f45k22.asm
@@ -638,51 +638,51 @@ Linker Map File - Created Thu Nov 14 22:42:22 2024
                   Servo_4   0x0000b4    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\main.c
                   Servo_5   0x0000da    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\main.c
                      main   0x000100    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\main.c
-                 OpenXLCD   0x00043c    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\openxlcd.c
-                _do_cinit   0x00050a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     test   0x000524    program     static                          
-                copy_loop   0x00057c    program     static                          
-            copy_one_byte   0x000582    program     static                          
-             done_copying   0x000590    program     static                          
-       ___return_lbl00002   0x0005a6    program     static                          
-                     done   0x0005a6    program     static                          
-                  FXM3232   0x0005a8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm3232.c
-       ___return_lbl00000   0x000616    program     static                          
-             SetDDRamAddr   0x000618    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\setddram.c
-             SetCGRamAddr   0x000668    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\setcgram.c
-                putrsXLCD   0x0006b8    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\putrxlcd.c
-            WriteDataXLCD   0x000706    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\writdata.c
-             WriteCmdXLCD   0x000752    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\wcmdxlcd.c
-                 putsXLCD   0x00079e    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\putsxlcd.c
-                 FXD3232U   0x0007e8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
-                     loop   0x0007f6    program     static                          
-                   _false   0x00082a    program     static                          
-       ___return_lbl00000   0x00082e    program     static                          
-             ReadDataXLCD   0x000830    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\readdata.c
-             ReadAddrXLCD   0x000874    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\readaddr.c
-                 BusyXLCD   0x0008b8    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\busyxlcd.c
-             Delay10KTCYx   0x0008ee    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10Kx   0x0008f8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                   D10K_1   0x0008fa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_0010   0x0008fe    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10Kl   0x000906    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_001C   0x00090a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-              Delay1KTCYx   0x00091c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-                     D1Kx   0x000926    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-                    D1K_1   0x000928    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-        _D1KTCYXCODE_0010   0x00092c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-        _D1KTCYXCODE_0016   0x000932    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-            __zero_memory   0x00093c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f45k22.asm
-               zero_block   0x00094a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f45k22.asm
-                   loop_h   0x00094a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f45k22.asm
-                compare_l   0x000952    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f45k22.asm
-                   loop_l   0x000954    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f45k22.asm
-                 _startup   0x00095c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     loop   0x00096c    program     static                          
-       ___return_lbl00001   0x000976    program     static                          
-               __string_1   0x000978    program     static C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\main.c
-               __string_0   0x00097e    program     static C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\main.c
-                   __init   0x00098a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
+                 OpenXLCD   0x00043a    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\openxlcd.c
+                _do_cinit   0x000508    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     test   0x000522    program     static                          
+                copy_loop   0x00057a    program     static                          
+            copy_one_byte   0x000580    program     static                          
+             done_copying   0x00058e    program     static                          
+       ___return_lbl00002   0x0005a4    program     static                          
+                     done   0x0005a4    program     static                          
+                  FXM3232   0x0005a6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm3232.c
+       ___return_lbl00000   0x000614    program     static                          
+             SetDDRamAddr   0x000616    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\setddram.c
+             SetCGRamAddr   0x000666    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\setcgram.c
+                putrsXLCD   0x0006b6    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\putrxlcd.c
+            WriteDataXLCD   0x000704    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\writdata.c
+             WriteCmdXLCD   0x000750    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\wcmdxlcd.c
+                 putsXLCD   0x00079c    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\putsxlcd.c
+                 FXD3232U   0x0007e6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
+                     loop   0x0007f4    program     static                          
+                   _false   0x000828    program     static                          
+       ___return_lbl00000   0x00082c    program     static                          
+             ReadDataXLCD   0x00082e    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\readdata.c
+             ReadAddrXLCD   0x000872    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\readaddr.c
+                 BusyXLCD   0x0008b6    program     extern C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\busyxlcd.c
+             Delay10KTCYx   0x0008ec    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x0008f6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                   D10K_1   0x0008f8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_0010   0x0008fc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x000904    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x000908    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+              Delay1KTCYx   0x00091a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                     D1Kx   0x000924    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                    D1K_1   0x000926    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0010   0x00092a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0016   0x000930    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+            __zero_memory   0x00093a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f45k22.asm
+               zero_block   0x000948    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f45k22.asm
+                   loop_h   0x000948    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f45k22.asm
+                compare_l   0x000950    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f45k22.asm
+                   loop_l   0x000952    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f45k22.asm
+                 _startup   0x00095a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     loop   0x00096a    program     static                          
+       ___return_lbl00001   0x000974    program     static                          
+               __string_1   0x000976    program     static C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\main.c
+               __string_0   0x00097c    program     static C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\main.c
+                   __init   0x000988    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
                __config_0   0x300001    program     static C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\main.c
                __config_1   0x300002    program     static C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\main.c
                __config_2   0x300003    program     static C:\Users\simon\MPLABXProjects\Flash_A_Mole.X\main.c
