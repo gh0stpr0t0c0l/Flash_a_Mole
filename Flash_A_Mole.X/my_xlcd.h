@@ -31,20 +31,20 @@
 /* #define UPPER */
 
 /* DATA_PORT defines the port to which the LCD data lines are connected */
- #define DATA_PORT      		PORTC
- #define TRIS_DATA_PORT 		TRISC
+ #define DATA_PORT      		PORTA
+ #define TRIS_DATA_PORT 		TRISA
 
 /* CTRL_PORT defines the port where the control lines are connected.
  * These are just samples, change to match your application.
  */
- #define RW_PIN   LATCbits.LATC6   		/* PORT for RW */
- #define TRIS_RW  TRISCbits.TRISC6    	/* TRIS for RW */
+ #define RW_PIN   LATAbits.LATA6   		/* PORT for RW */
+ #define TRIS_RW  TRISAbits.TRISA6    	/* TRIS for RW */
 
- #define RS_PIN   LATCbits.LATC5   		/* PORT for RS */
- #define TRIS_RS  TRISCbits.TRISC5    	/* TRIS for RS */
+ #define RS_PIN   LATAbits.LATA5   		/* PORT for RS */
+ #define TRIS_RS  TRISAbits.TRISA5    	/* TRIS for RS */
 
- #define E_PIN    LATCbits.LATC4  		/* PORT for D  */
- #define TRIS_E   TRISCbits.TRISC4    	/* TRIS for E  */
+ #define E_PIN    LATAbits.LATA4  		/* PORT for D  */
+ #define TRIS_E   TRISAbits.TRISA4    	/* TRIS for E  */
 
 /* Display ON/OFF Control defines */
 #define DON         0b00001111  /* Display on      */
